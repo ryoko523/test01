@@ -25,7 +25,7 @@ jobs:
         run: 
           npx express-generator myExpressApp --view ejs
           cd myExpressApp && npm install
-          DEBUG=myexpressapp:* npm start
+          npm start
           code .
           
       - name: Upload artifact for deployment job
